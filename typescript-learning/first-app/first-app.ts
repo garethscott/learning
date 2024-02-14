@@ -187,7 +187,7 @@ roles = ['admin', 'editor'];
 
 //Array is a type of Generic Type, Array<Role> two types woring together , but you can build your own, see below
 
-//The <T> below is a gernic type place holder at typ will eventually be place in there to work with the DataStorage object type.
+//The <T> below is a gernic type place holder a type will eventually be place in there to work with the DataStorage object type.
 
 // You define generic types and then you can reuse them with different types, the below is a sturcture to store different type faces.
 
