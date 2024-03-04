@@ -1,10 +1,12 @@
-import Input from "./components/Input.tsx";
+import { useRef } from 'react';
+import Input from './components/Input.tsx';
 
 function App() {
+  const input = useRef<HTMLInputElement>(null);
+
   return (
     <main>
-      <Input id="name" label="Your Name" type="text" />
-      <Input id="age" label="Your Age" type="number" />
+      <Input label="Test" id="test" ref={input} />
     </main>
   );
 }
