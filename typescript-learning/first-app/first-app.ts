@@ -207,7 +207,6 @@ const textStorage: DataStorage<string> = {
     }
 }
 
-
 const userStorage: DataStorage<User> = {
     storage: [],
     add(user) { }
