@@ -8,7 +8,7 @@ import { type ReactNode } from "react";
 //   children: ReactNode;
 // }
 
-// Below is an example of using discriminate unions within a component, condition on using two different
+// Below is an example of using 'Discriminate unions' within a component, condition on using two different
 // sets of props based on the mode prop 'hint' or 'warning'
 type HintBoxProps = {
   mode: "hint";
@@ -34,6 +34,8 @@ export default function InfoBox(props: InfoBoxProps) {
     );
   }
 
+  // Typescript knows that 'serverity' can be exracted from props because the 'mode' has
+  // not been discovered, and if it hasnt been discovered then it must be in 'warning' mode.
   const { severity } = props;
 
   return (

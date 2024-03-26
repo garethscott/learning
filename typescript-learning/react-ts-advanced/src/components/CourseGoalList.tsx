@@ -20,6 +20,7 @@ export default function CourseGoalList({
     );
   }
 
+  // warningBox below is called a helper function
   let warningBox: ReactNode;
 
   if (goals.length >= 4) {

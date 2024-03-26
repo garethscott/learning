@@ -9,7 +9,7 @@ import { type ComponentPropsWithoutRef } from 'react';
 // } & ComponentPropsWithoutRef<'a'>;
 
 // Below uses a Type Predicates, not assigning a element property and using
-// but using a the isAnchorProps funtction to test for attributes withing the
+// but using a the isAnchorProps funtction to test for attributes within the
 // element type
 type ButtonProps = ComponentPropsWithoutRef<'button'> & {
   href?: never;
