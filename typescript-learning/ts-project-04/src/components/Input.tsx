@@ -2,10 +2,13 @@ import { forwardRef, type ComponentPropsWithoutRef } from 'react';
 
 // Below we make use the ComponetsPropsWithoutRefs, this is
 // use to spread all the types of input into the componets so a
-// type prop can be passed, noticed a ref prop would not be
+// type prop can be passed, notice in this example the ref is
+// passed from outside the component and the ref prop would not be
 // allowed to be be passed, so ComponentPropsWithoutRef allows
 // you to use all the attributes of the type of element in this
 // case, the iput element
+
+// Look at lesson 57
 
 type InputProps = {
   label: string;
